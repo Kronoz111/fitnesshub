@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="page.css">
+
+    <style>
+        @font-face {
+            font-family: header1;
+            src: url(municipal-webfont.woff);
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+
+<style type="text/css">
+
+
+    #imageDiv img {
+        width:100px;
+        height:100px;
+        border:1px solid white;
+        margin:9px;
+    }
+    
+    #imageDiv {
+        width:800px;
+        height:120px;
+        background-color: transparent;
+        margin:auto;
+    }
+    
+    #imageDiv li {
+        display:inline-block;
+        width:104px;
+        height:120px;
+        float:left;
+        margin:2px;
+    }
+    
+    #imageDiv img:hover {
+        border:5px solid red;
+        -webkit-transform:rotate(15deg);
+    }
+    
+    #selectedImage {
+        width:300px;
+        height:300px;
+        display:block;
+        margin:auto;
+    }
+    
+    </style>
+        <style>
+            hr {
+                position: relative;
+                top: 0px;
+                border: none;
+                height: 3px;
+                background: black;
+                margin-bottom: 30px;
+    }
+    </style>
+
+<script>
+    function showPicture(theImg) {
+        // statement that show the selected image
+        document.getElementById("selectedImage").src = theImg.src;
+    }
+    
+    </script>
+</head>
+<body class="bg">
+    <!-- Page 2: about -->
+    <header>
+        <h1>FITNESS HUB</h1>
+        <nav>
+            <ul>
+                <li><a href="page.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">ROUTINE PLAN</a></li>
+                <li><a href="caloriecal.html">CALORIE CALCULATOR</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="highlight">
+            <h2>About</h2>
+            <hr>
+            <p>Below are the various exercises you could do if you want to gym or workout at home! Dont limit yourself to the same
+                exercises always. There are variety of exercises so you won't get bored from only doing only 1 exercise! 
+            </p>
+
+
+
+
+            <img id="selectedImage" src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pexels-andrea-piacquadio-3837781.jpg">
+            <div id="imageDiv">
+            <ul>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pexels-andrea-piacquadio-3837781.jpg   "  onclick="showPicture(this);"/></li>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pexels-karl-solano-2780762.jpg" onclick="showPicture(this);"/></li>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pikepushup.jpg" onclick="showPicture(this);"/></li>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pexels-li-sun-371049.jpg" onclick="showPicture(this);"/></li>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\pexels-alesia-kozik-7289371.jpg" onclick="showPicture(this);"/></li>
+            <li><img src="C:\Users\Alif\Desktop\WebDev\Practical\WebDev\week15assigment\exer\squatexer.jpg" onclick="showPicture(this);"/></li>
+            
+            </ul>
+            </div>
+
+
+
+
+
+            
+        </section>
+    </main>
+    <footer class="highlight">
+        <p>&copy; 2023 Fitness Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

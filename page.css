@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    font-weight: bold;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(pexels-victor-freitas-791763.jpg);
+    background-repeat: repeat-y;
+    background-size: auto;
+    
+}
+
+header {
+    background-color: hsl(0, 0%, 20%,0.9);
+    color: #ffffff;
+    padding: 4px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;    
+    text-align: center;
+    
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+nav ul li a::after /*animated white line*/{  
+    background-color: #ffffff;
+    content: '';
+    width: 0;
+    position:absolute;
+    bottom: -5px;
+    height: 3px;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+    left: 50%;
+    background: #fff;
+}
+nav ul li a:hover::after{
+        width: 50%;
+}
+
+main {
+    padding: 1rem;
+}
+h1{
+    font-size: 100px;
+    font-family: header1;
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+#indent {
+    padding-bottom: 3%;
+}
+
+.highlight{
+    background-color: rgba(255,255,255,0.6);
+    margin-left: 100px;
+    margin-right:100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.highlight1{
+    background-color: rgba(255,255,255,0.6);
+    margin-left: 120px;
+    margin-right:120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 37px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  label, select, input, button {
+    display: block; 
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    }
+
+  #results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #results li {
+    margin-bottom: 10px;
+  }
+
+#center12 {
+    text-align: center;
+}
